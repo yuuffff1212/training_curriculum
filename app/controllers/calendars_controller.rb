@@ -15,7 +15,9 @@ class CalendarsController < ApplicationController
 
   private
 
-  
+  def wdays
+    Date.today.wdays
+  end
 
   def getWeek
     wdays = ['(日)','(月)','(火)','(水)','(木)','(金)','(土)']
